@@ -1,29 +1,45 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  html {
-    text-rendering: optimizeLegibility;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-color: #161719;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  body {
+      margin: 0;
+      padding: 0;
+      line-height: 1.85em;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      color: #242732;
   }
-  html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
   }
+  
+  img {
+      border: none;
+      margin: 0;
+      padding: 0;
+  }
+  
   a {
-    color: #e07628;
-    text-decoration: none;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      text-decoration: none;
+      -o-transition: all .3s;
+      -moz-transition: all .3s;
+      -webkit-transition: all .3s;
+      -ms-transition: all .3s;
+      color: #3e43e9;
   }
-`
+  input:focus,
+  button:focus,
+  a:focus {
+    outline: 0;
+  }
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
