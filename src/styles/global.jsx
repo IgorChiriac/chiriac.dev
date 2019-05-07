@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
       line-height: 1.85em;
       font-size: 14px;
       font-family: 'Poppins', sans-serif;
-      color: #242732;
+      color: #000000;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
       -moz-transition: all .3s;
       -webkit-transition: all .3s;
       -ms-transition: all .3s;
-      color: #3e43e9;
+      color: #000000;
   }
   input:focus,
   button:focus,

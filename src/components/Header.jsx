@@ -40,63 +40,45 @@ const Header = () => (
                   <span className="icon-map-streamline-user" /> About
                 </a>
               </li>
-              <li>
-                <a href="#experience" className="scroll">
-                  <span className="icon-dashboard-speed-streamline" />{" "}
-                  Experience
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="scroll">
-                  <span className="icon-settings-streamline-1" /> Services
-                </a>
-              </li>
-              <li>
-                <a href="#portfolio" className="scroll">
-                  <span className="icon-streamline-suitcase-travel" /> Portfolio
-                </a>
-              </li>
-              <li>
-                <a href="#clients" className="scroll">
-                  <span className="icon-speech-streamline-talk-user" /> Clients
-                </a>
-              </li>
-              <li>
-                <a href="#blog" className="scroll">
-                  <span className="icon-design-graphic-tablet-streamline-tablet" />{" "}
-                  Blog
-                </a>
-              </li>
             </ul>
           </div>
         </div>
         <ul className="header-social-icons">
           <li>
-            <a href="#0" target="_blank" title="Facebook">
-              {" "}
-              <i className="fab fa-facebook-f" />{" "}
-            </a>
-          </li>
-          <li>
-            <a href="#0" target="_blank" title="Twitter">
+            <a
+              href="https://twitter.com/Igor_Chiriac"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Twitter"
+            >
               {" "}
               <i className="fab fa-twitter" />{" "}
             </a>
           </li>
           <li>
-            <a href="#0" target="_blank" title="Instagram">
+            <a
+              href="https://www.linkedin.com/in/igor-chiriac/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Linkedin"
+            >
               {" "}
-              <i className="fab fa-instagram" />
+              <i className="fab fa-linkedin" />{" "}
             </a>
           </li>
           <li>
-            <a href="#0" target="_blank" title="Behance">
+            <a
+              href="https://github.com/IgorChiriac"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Github"
+            >
               {" "}
-              <i className="fab fa-behance" />{" "}
+              <i className="fab fa-github" />
             </a>
           </li>
         </ul>
-        <h6 className="copy-txt">Copyright © 2018 Resume</h6>
+        <h6 className="copy-txt">Copyright © 2019 Igor Chiriac</h6>
       </nav>
     </div>
   </header>
