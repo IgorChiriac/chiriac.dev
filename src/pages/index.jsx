@@ -3,6 +3,7 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 import "../components/header.css";
 import Home from "../views/Home";
+import About from "../views/About";
 import "./index.css";
 import "./bootstrap.css";
 import "./fontawesome.css";
@@ -32,6 +33,7 @@ const Index = () => (
     </div>
     <div className="right-side-area">
       <Home />
+      <About />
     </div>
   </>
 );

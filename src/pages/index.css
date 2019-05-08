@@ -30,8 +30,7 @@
 !**
  * 1.0 General
  * -----------------------------------------------------------------------------
- *!
-
+ */
 body {
     margin: 0;
     padding: 0;
@@ -132,7 +131,7 @@ h5.subtitle {
     font-size: 16px;
 }
 
-!* page loader *!
+/* page loader */
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -174,7 +173,7 @@ h5.subtitle {
     }
 }
 
-!**
+/**
  * 2.0 Header (Logo or navigation)
  * -----------------------------------------------------------------------------
  *!
@@ -616,11 +615,6 @@ h5.subtitle {
     overflow: hidden;
 }
 
-/**
- * 4.0 About (Section)
- * -----------------------------------------------------------------------------
- *!
-
 .about-area {
     position: relative;
     overflow: hidden;
@@ -671,7 +665,7 @@ h5.subtitle {
     float: left;
 }
 
-!**
+/**
  * 5.0 Experience (Section)
  * -----------------------------------------------------------------------------
  *!
