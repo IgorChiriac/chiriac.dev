@@ -17,11 +17,9 @@ const About = () => (
               <h6 className="about-role">I am a Full-Stack Web Developer</h6>
             </div>
             <p>
-              Experienced Frontend Developer with a demonstrated history of
-              working in the information technology and services industry.
-              Skilled in Javascript, NodeJs, React, Typescript, and GraphQL.
-              Strong engineering professional with a Master of Computer
-              Applications (MCA) focused in Distributed Systems in Internet from
+              Experienced Frontend Developer with a demonstrated history of working in the information technology and
+              services industry. Skilled in Javascript, NodeJs, React, Typescript, and GraphQL. Strong engineering
+              professional with a Master of Computer Applications (MCA) focused in Distributed Systems in Internet from
               Johannes Kepler Universität Linz.
             </p>
             <hr />
@@ -33,9 +31,7 @@ const About = () => (
               <li>
                 <span>Email:</span>
                 <p>
-                  <a href="mailto:igorchiriac@outlook.com">
-                    igorchiriac@outlook.com
-                  </a>
+                  <a href="mailto:igorchiriac@outlook.com">igorchiriac@outlook.com</a>
                 </p>
               </li>
               <li>
@@ -47,12 +43,12 @@ const About = () => (
                 <p>Cantemir, Republic of Moldova</p>
               </li>
             </ul>
-            {/*<a href="#0" className="btn button-scheme">*/}
-            {/*Resume*/}
-            {/*</a>*/}
-            {/*<a href="#experience" className="btn scroll">*/}
-            {/*Experience*/}
-            {/*</a>*/}
+            {/* <a href="#0" className="btn button-scheme"> */}
+            {/* Resume */}
+            {/* </a> */}
+            {/* <a href="#experience" className="btn scroll"> */}
+            {/* Experience */}
+            {/* </a> */}
           </div>
         </div>
       </div>

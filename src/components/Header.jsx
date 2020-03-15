@@ -45,12 +45,7 @@ const Header = () => (
         </div>
         <ul className="header-social-icons">
           <li>
-            <a
-              href="https://twitter.com/Igor_Chiriac"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Twitter"
-            >
+            <a href="https://twitter.com/Igor_Chiriac" target="_blank" rel="noopener noreferrer" title="Twitter">
               {" "}
               <i className="fab fa-twitter" />{" "}
             </a>
@@ -67,12 +62,7 @@ const Header = () => (
             </a>
           </li>
           <li>
-            <a
-              href="https://github.com/IgorChiriac"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Github"
-            >
+            <a href="https://github.com/IgorChiriac" target="_blank" rel="noopener noreferrer" title="Github">
               {" "}
               <i className="fab fa-github" />
             </a>

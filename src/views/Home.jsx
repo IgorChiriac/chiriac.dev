@@ -13,18 +13,17 @@ const Home = () => (
             <span>I'm a FullStack Developer</span>
           </h1>
           <p className="description">
-            I'm a Full-Stack Web Developer with extensive experience for over 8
-            years. My expertise is to develop Websites, Progressive Web Apps ,
-            Mobile Applications and many more...
+            I'm a Full-Stack Web Developer with extensive experience for over 8 years. My expertise is to develop
+            Websites, Progressive Web Apps , Mobile Applications and many more...
           </p>
-          {/*<div className="button-area">*/}
-          {/*<a className="btn scroll" href="#portfolio">*/}
-          {/*Portfolio*/}
-          {/*</a>*/}
-          {/*<a className="btn scroll button-scheme" href="#quote">*/}
-          {/*Hire me*/}
-          {/*</a>*/}
-          {/*</div>*/}
+          {/* <div className="button-area"> */}
+          {/* <a className="btn scroll" href="#portfolio"> */}
+          {/* Portfolio */}
+          {/* </a> */}
+          {/* <a className="btn scroll button-scheme" href="#quote"> */}
+          {/* Hire me */}
+          {/* </a> */}
+          {/* </div> */}
         </div>
       </div>
     </div>

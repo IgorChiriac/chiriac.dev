@@ -28,7 +28,7 @@ const Loading = () => (
           </clipPath>
         </defs>
         <circle cx="50" cy="50" r="35" fill="rgba(62, 67, 233, 0.29)" />
-        <g clip-path="url(#cut-off)">
+        <g clipPath="url(#cut-off)">
           <path
             transform="translate(-62.5 0)"
             fill="#ffffff"

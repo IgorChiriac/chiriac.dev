@@ -2,13 +2,35 @@ import React from "react";
 import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 import { graphql, StaticQuery } from "gatsby";
-import config from "../../config/website";
+
+const config = {
+  pathPrefix: "/",
+
+  siteTitle: "Igor Chiriac - Personal Website",
+  siteTitleAlt: "Igor Chiriac",
+  siteTitleShort: "chiriac",
+  siteHeadline: "",
+  siteUrl: "https://chiriac.dev",
+  siteLanguage: "en",
+  siteLogo: "/logo.png",
+  siteDescription: "",
+  author: "IgorChiriac",
+
+  userTwitter: "@Igor_Chiriac", // Twitter Username
+  ogSiteName: "cara", // Facebook Site Name
+  ogLanguage: "en_US", // Facebook Language
+  googleAnalyticsID: "UA-47519312-5",
+
+  // Manifest and Progress color
+  themeColor: "#e07628",
+  backgroundColor: "#a0d8f1"
+};
 
 const Head = props => {
   const {
     data: {
-      site: { buildTime }
-    }
+      site: { buildTime },
+    },
   } = props;
 
   const title = config.siteTitle;
@@ -33,27 +55,27 @@ const Head = props => {
     name: config.siteTitle,
     author: {
       "@type": "Person",
-      name: config.author
+      name: config.author,
     },
     copyrightHolder: {
       "@type": "Person",
-      name: config.author
+      name: config.author,
     },
     copyrightYear: "2019",
     creator: {
       "@type": "Person",
-      name: config.author
+      name: config.author,
     },
     publisher: {
       "@type": "Person",
-      name: config.author
+      name: config.author,
     },
     datePublished: "2019-01-17",
     dateModified: buildTime,
     image: {
       "@type": "ImageObject",
-      url: image
-    }
+      url: image,
+    },
   };
 
   // Initial breadcrumb list
@@ -63,10 +85,10 @@ const Head = props => {
       "@type": "ListItem",
       item: {
         "@id": homeURL,
-        name: "Homepage"
+        name: "Homepage",
       },
-      position: 1
-    }
+      position: 1,
+    },
   ];
 
   const breadcrumb = {
@@ -74,7 +96,7 @@ const Head = props => {
     "@type": "BreadcrumbList",
     description: "Breadcrumbs list",
     name: "Breadcrumbs",
-    itemListElement
+    itemListElement,
   };
 
   return (
@@ -82,18 +104,8 @@ const Head = props => {
       <html lang={config.siteLanguage} />
       <title>{title}</title>
       <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/favicons/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/favicons/favicon-16x16.png"
-      />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
       <meta name="gatsby-starter" content="Gatsby Starter Portfolio Cara" />
       <link rel="shortcut icon" href="favicon.ico" />
       <meta name="msapplication-TileColor" content={config.backgroundColor} />
@@ -107,21 +119,14 @@ const Head = props => {
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:image:alt" content={description} />
-      {config.siteFBAppID && (
-        <meta property="fb:app_id" content={config.siteFBAppID} />
-      )}
+      {config.siteFBAppID && <meta property="fb:app_id" content={config.siteFBAppID} />}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:creator"
-        content={config.userTwitter ? config.userTwitter : ""}
-      />
+      <meta name="twitter:creator" content={config.userTwitter ? config.userTwitter : ""} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
       <meta name="twitter:image:alt" content={description} />
-      <script type="application/ld+json">
-        {JSON.stringify(schemaOrgWebPage)}
-      </script>
+      <script type="application/ld+json">{JSON.stringify(schemaOrgWebPage)}</script>
       <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
     </Helmet>
   );
@@ -130,17 +135,13 @@ const Head = props => {
 Head.propTypes = {
   data: PropTypes.shape({
     site: PropTypes.shape({
-      buildTime: PropTypes.string.isRequired
-    })
-  }).isRequired
+      buildTime: PropTypes.string.isRequired,
+    }),
+  }).isRequired,
 };
 
-const SEO = props => (
-  <StaticQuery
-    query={querySEO}
-    render={data => <Head {...props} data={data} />}
-  />
-);
+/* eslint-disable react/jsx-props-no-spreading */
+const SEO = props => <StaticQuery query={querySEO} render={data => <Head {...props} data={data} />} />;
 
 export default SEO;
 
