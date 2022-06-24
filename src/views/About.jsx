@@ -31,24 +31,18 @@ const About = () => (
               <li>
                 <span>Email:</span>
                 <p>
-                  <a href="mailto:igorchiriac@outlook.com">igorchiriac@outlook.com</a>
+                  <a href="mailto:igorchiriac@outlook.com">igorchiriac[@]outlook.com</a>
                 </p>
               </li>
               <li>
                 <span>Age:</span>
-                <p>27</p>
+                <p>{new Date().getFullYear() - 1991}</p>
               </li>
               <li>
                 <span>From:</span>
                 <p>Cantemir, Republic of Moldova</p>
               </li>
             </ul>
-            {/* <a href="#0" className="btn button-scheme"> */}
-            {/* Resume */}
-            {/* </a> */}
-            {/* <a href="#experience" className="btn scroll"> */}
-            {/* Experience */}
-            {/* </a> */}
           </div>
         </div>
       </div>
