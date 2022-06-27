@@ -7,7 +7,7 @@ const About = () => (
       <div className="row">
         <div className="col-sm-12 col-lg-6">
           <div className="about-img">
-            <img src={AboutImage} alt="" />
+            {/* <img src={AboutImage} alt="" /> */}
           </div>
         </div>
         <div className="col-sm-12 col-lg-6">
